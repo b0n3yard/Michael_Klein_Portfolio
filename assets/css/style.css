@@ -1,0 +1,75 @@
+/*RESETS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+a{
+    color: #fff;
+    text-decoration:none;
+
+}
+/* GLOBAL CLASSES */
+.text-center{
+    text-align: center;
+}
+
+/* CUSTOM STYLES */
+header{
+    background-color: #4f4875;
+    padding: 7px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+header h3{
+    color: #ffffff;
+
+}
+
+header nav a:not(:last-child){
+    margin:10px;
+
+
+}
+/* Hero image */
+
+
+.hero{
+    background-image: linear-gradient(rgba(0,0,0.5 ), rgb(141, 141, 173)), url("../pflag.jpg");
+    background-image: url("../pflag.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color:#8a8816;
+    
+}
+.portfolio{
+    margin-top: 35px;
+
+}
+.portfolio h3{
+    margin-bottom: 25px;
+
+}
+
+.work{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+}
+
+/* Media Queries */
+@media(min-width: 750px){
+    .portfolio{
+        padding: 25px 10%;
+    }
+
+
+}
+
