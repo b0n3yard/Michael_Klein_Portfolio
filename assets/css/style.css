@@ -75,6 +75,7 @@ header nav a:not(:last-child){
     padding: 100px 0;
     color:#2f4ced;
     height: 500px;
+    font-size: 30px;
     
     background-color: #0b0b0b;
     
@@ -87,13 +88,20 @@ header nav a:not(:last-child){
     margin-bottom: 25px;
 
 }
+.working{
+    position:relative;
+    left: 0%;
+
+}
 #mywork{
     width: 50%;
 }
 .work{
-    flex:1;
-    gap:5px;
-    column-gap: 15px;
+    /* flex:1; */
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    left: 10%;
     
 }
 
@@ -120,6 +128,9 @@ header nav a:not(:last-child){
 
 footer{
     margin-top: auto;
+    flex-direction:column;
+    position: relative;
+    left: 10%;
     
     /* justify-content: space-between; */
 }
