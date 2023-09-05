@@ -7,15 +7,41 @@
     font-family: sans-serif;
 
 }
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #2a3439;
+    
+}
+
+
 
 a{
     color: #fff;
     text-decoration:none;
 
 }
+h3{
+    font-family: arial;
+    font-size: 70px;
+    color:rgb(3, 70, 47);
+    font-weight: bolder;
+    width:400px;
+}
 /* GLOBAL CLASSES */
 .text-center{
     text-align: center;
+}
+.grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.flexes{
+    display:flex;
+}
+.rborder{
+    border-right: solid 5px black;
 }
 
 /* CUSTOM STYLES */
@@ -29,6 +55,7 @@ header{
 }
 header h3{
     color: #ffffff;
+    
 
 }
 
@@ -43,12 +70,18 @@ header nav a:not(:last-child){
 .hero{
     background-image: linear-gradient(rgba(0,0,0.5 ), rgb(141, 141, 173)), url("../pflag.jpg");
     background-image: url("../pflag.jpg");
-    background-size: cover;
+    background-size: contain ;
+    background-repeat: no-repeat;
     background-position: center;
     padding: 100px 0;
     color:#8a8816;
+    height: 500px;
+    
+    background-color: #0b0b0b;
     
 }
+
+
 .portfolio{
     margin-top: 35px;
 
@@ -57,19 +90,79 @@ header nav a:not(:last-child){
     margin-bottom: 25px;
 
 }
-
+#my-work{
+    border-right: solid 5px black;
+}
 .work{
+    
+    flex:1;
     display:grid;
+    
     grid-template-columns: 1fr 1fr;
-    gap:15px;
+    /* grid-template-rows: auto auto; */
+    gap:5px;
+    column-gap: 15px;
+    
 }
 
+.image{
+    border: solid 5px black;
+    height: 300px;
+    width: 400px;
+    box-shadow: black 10px 10px;
+
+}
+.image:hover{
+    opacity: 0.5;
+    transform: scale(1.3);
+
+
+}
+.contact{
+   
+    margin-top: 50px;
+
+}
+#contact-me{
+    text-align: left;
+    font-size: 60px;
+}
+
+
+footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+}
 /* Media Queries */
 @media(min-width: 750px){
+    /* .portfolio{
+        padding: 25px 10%;
+    } */
+
+
+}
+
+@media(min-width: 800px){
+    /* .work{
+        margin: 0 auto;
+        width:50%;
+    } */
+    
+
+}
+@media(max-width: 800px){
+    .image{
+        height: 150px; 
+        width: 200px;
+    }
     .portfolio{
         padding: 25px 10%;
     }
-
+    h3{
+        font-size: 30px;
+    }
 
 }
+
 
