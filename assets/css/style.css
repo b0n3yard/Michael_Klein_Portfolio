@@ -68,7 +68,7 @@ header nav a:not(:last-child){
 
 .hero{
     background-image: linear-gradient(rgba(0,0,0.5 ), rgb(141, 141, 173)), url("../pflag.jpg");
-    background-image: url("../Red\ wall.jpg");
+    background-image: url("../pflag.jpg");
     background-size: contain ;
     background-repeat: no-repeat;
     background-position: center;
@@ -79,6 +79,23 @@ header nav a:not(:last-child){
     
     background-color: #0b0b0b;
     
+}
+.hero h1{
+    /* background-color: grey; */
+    
+    width: 400px;
+    position: relative;
+    left: 10%;
+    
+}
+/* Start of main text */
+.about p {
+    position: relative;
+    font-size: 20px;
+    font-weight: bolder;
+    color:white;
+    width: 420px;
+    left: 90%;
 }
 .portfolio{
     margin-top: 35px;
@@ -97,18 +114,18 @@ header nav a:not(:last-child){
     width: 50%;
 }
 .work{
-    /* flex:1; */
+   
     justify-content: center;
     gap: 15px;
     position: relative;
-    left: 10%;
+    left: 2%;
     
 }
 
 .image{
     border: solid 5px black;
-    height: 300px;
-    width: 400px;
+    height: 500px;
+    width: 600px;
     box-shadow: black 10px 10px;
 
 }
@@ -118,11 +135,19 @@ header nav a:not(:last-child){
 }
 .contact{
     margin-top: 50px;
+    
+
 
 }
-#contact-me{
-    text-align: left;
-    font-size: 60px;
+.contact a{
+    position: relative;
+    left: 20%;
+    font-size: 40px;
+    margin-left: 5px;
+    text-decoration: underline;
+    text-align: center;
+
+
 }
 
 
@@ -130,27 +155,8 @@ footer{
     margin-top: auto;
     flex-direction:column;
     position: relative;
-    left: 10%;
-    
-    /* justify-content: space-between; */
-}
-/* Media Queries */
-@media(min-width: 750px){
-    /* .portfolio{
-        padding: 25px 10%;
-    } */
-
-
-}
-
-@media(min-width: 800px){
-    /* .work{
-        margin: 0 auto;
-        width:50%;
-    } */
-    
-
-}
+  
+}    
 @media(max-width: 800px){
     .image{
         height: 150px; 
@@ -160,9 +166,33 @@ footer{
         padding: 25px 10%;
     }
     h3{
-        font-size: 30px;
+        font-size: 40px;
+        text-align: left;
     }
+    .rborder{
+        position: relative;
+        right: 10%;
+    } 
+    .hero h1{
+        bottom:30%;
+        left:20%;
 
+    }
+    .about p {
+        left: -10%;
+    }
+    .work{
+        left: -8%;
+    }
+    
+    #contact-me{
+        right: 11%;
+        width: 200px;
+    }
+    .contact a{
+        left: -5%;
+    }
+   
 }
 
 
