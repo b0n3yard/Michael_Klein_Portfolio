@@ -204,17 +204,19 @@ footer{
     }
     .about p {
         left: -10%;
+        width: 340px;
     }
     .work{
         left: -8%;
+        gap: 0px;
     }
     .image{
         height: 150px; 
-        width: 200px;
+        width: 180px;
     }
     .item-1 .test{
         height:300px;
-        width: 400px;
+        width: 36px;
     }
     
     #contact-me{
@@ -222,7 +224,8 @@ footer{
         width: 200px;
     }
     .contact a{
-        left: -5%;
+        left: -34%;
+        margin-left: 20px;
     }
    
 }
