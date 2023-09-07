@@ -210,5 +210,21 @@ footer{
     }
    
 }
+@media(max-width: 1300px){
+    .about p {
+        left: -10%;
+    }
+    .item-1 .test{
+        height:800px;
+        width: 700px;
+    }
+    .image{
+        height:300px;
+        width: 400px;
+    }
+
+
+
+}
 
 
