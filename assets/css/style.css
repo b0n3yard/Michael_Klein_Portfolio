@@ -167,8 +167,24 @@ footer{
     margin-top: auto;
     flex-direction:column;
     position: relative;
-  
+    
 }    
+@media(max-width: 1300px){
+    .about p {
+        left: -10%;
+    }
+    .item-1 .test{
+        height:800px;
+        width: 700px;
+    }
+    .image{
+        height:300px;
+        width: 400px;
+    }
+
+
+
+}
 @media(max-width: 800px){
     .portfolio{
         padding: 25px 10%;
@@ -209,22 +225,6 @@ footer{
         left: -5%;
     }
    
-}
-@media(max-width: 1300px){
-    .about p {
-        left: -10%;
-    }
-    .item-1 .test{
-        height:800px;
-        width: 700px;
-    }
-    .image{
-        height:300px;
-        width: 400px;
-    }
-
-
-
 }
 
 
