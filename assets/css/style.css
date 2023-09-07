@@ -27,13 +27,17 @@ h3{
     font-weight: bolder;
     width:400px;
 }
+h4{
+    color: white;
+}
 /* GLOBAL CLASSES */
 .text-center{
     text-align: center;
 }
 .grids{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-column: 1 /span 2;
 }
 .flexes{
     display:flex;
@@ -120,6 +124,14 @@ header nav a:not(:last-child){
     position: relative;
     left: 2%;
     
+    
+}
+.item-1{
+    grid-column: 1 / span 2 ;
+}
+.item-1 .test{
+    width: 1200px;
+    height:700px;
 }
 
 .image{
@@ -141,9 +153,9 @@ header nav a:not(:last-child){
 }
 .contact a{
     position: relative;
-    left: 20%;
+    left: 10%;
     font-size: 40px;
-    margin-left: 5px;
+    margin-left: 100px;
     text-decoration: underline;
     text-align: center;
 
@@ -158,10 +170,6 @@ footer{
   
 }    
 @media(max-width: 800px){
-    .image{
-        height: 150px; 
-        width: 200px;
-    }
     .portfolio{
         padding: 25px 10%;
     }
@@ -176,13 +184,21 @@ footer{
     .hero h1{
         bottom:30%;
         left:20%;
-
+        
     }
     .about p {
         left: -10%;
     }
     .work{
         left: -8%;
+    }
+    .image{
+        height: 150px; 
+        width: 200px;
+    }
+    .item-1 .test{
+        height:300px;
+        width: 400px;
     }
     
     #contact-me{
