@@ -13,5 +13,3 @@ to insall this project, clone the repository from [github](https://github.com/b0
 
 ## Credits
 Michael Klein
-
-## Licence
