@@ -171,7 +171,7 @@ footer{
 }    
 @media(max-width: 1300px){
     .about p {
-        left: -10%;
+        left: 55%;
     }
     .item-1 .test{
         height:800px;
@@ -216,7 +216,7 @@ footer{
     }
     .item-1 .test{
         height:300px;
-        width: 36px;
+        width: 360px;
     }
     
     #contact-me{
@@ -224,7 +224,7 @@ footer{
         width: 200px;
     }
     .contact a{
-        left: -34%;
+        left: -10%;
         margin-left: 20px;
     }
    
